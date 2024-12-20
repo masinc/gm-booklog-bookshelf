@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import ToggleUsersHeader from "./ToggleUsersHeader";
 import "./index.css";
+import "./app.css";
 import BookShelfToolbar from "./BookShelfToolbar";
 
 const headerMenu = document.getElementById("header-menu") as HTMLElement;
@@ -31,7 +32,8 @@ if (!shelfHeaderMenu) {
 ReactDOM.createRoot(
 	(() => {
 		const app = document.createElement("div");
-		shelfHeaderMenu.appendChild(app);
+		app.classList.add("bookshelf-toolbar");
+		shelfHeaderMenu.after(app);
 		return app;
 	})(),
 ).render(

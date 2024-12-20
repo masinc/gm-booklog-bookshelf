@@ -15,7 +15,7 @@ function BookShelfToolbar () {
     ]
 
     return (
-        <div className="flex flex-wrap justify-end">
+        <div className="flex flex-wrap justify-end h-6">
             {/* search bar */}
             <div className="flex items-center text-xl mx-5">
                 <input type="search" className="input input-bordered w-64" placeholder="Search..." value={searchText} 
