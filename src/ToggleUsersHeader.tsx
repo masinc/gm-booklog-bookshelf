@@ -21,7 +21,7 @@ function ToggleUserHeader() {
 
 	return (
 		<div className="menu">
-			<button type="button" onClick={toggle} className="btn text-xl">本棚情報</button>
+			<button type="button" onClick={toggle} className="btn btn-primary text-xl">本棚情報</button>
 		</div>
 	);
 }
