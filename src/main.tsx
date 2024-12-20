@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import ToggleUsersHeader from "./ToggleUsersHeader";
 import "./index.css";
 
 const headerMenu = document.getElementById("header-menu") as HTMLElement;
@@ -17,6 +17,6 @@ ReactDOM.createRoot(
 	})(),
 ).render(
 	<React.StrictMode>
-		<App />
+		<ToggleUsersHeader />
 	</React.StrictMode>,
 );
