@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 
-import "./App.css";
-
 function App() {
 	const [usersHeader] = useState<HTMLElement>(document.getElementById("users-header") as HTMLElement);
 
@@ -22,9 +20,9 @@ function App() {
 	}
 
 	return (
-		<>
-			<button type="button" onClick={toggle} className="menu">本棚の表示</button>
-		</>
+		<div className="menu">
+			<button type="button" onClick={toggle} className="btn text-xl">本棚情報</button>
+		</div>
 	);
 }
 
