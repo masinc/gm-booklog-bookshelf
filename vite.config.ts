@@ -4,25 +4,25 @@ import monkey, { cdn } from "vite-plugin-monkey";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    monkey({
-      entry: "src/main.tsx",
-      userscript: {
-        icon: "https://www.google.com/s2/favicons?sz=64&domain=booklog.jp",
-        namespace: "https://masinc.dev",
-        match: ["https://booklog.jp/users/*"],
-        grant: "none",
-      },
-      build: {
-        externalGlobals: {
-          react: cdn.jsdelivr("React", "umd/react.production.min.js"),
-          "react-dom": cdn.jsdelivr(
-            "ReactDOM",
-            "umd/react-dom.production.min.js"
-          ),
-        },
-      },
-    }),
-  ],
+	plugins: [
+		react(),
+		monkey({
+			entry: "src/main.tsx",
+			userscript: {
+				icon: "https://www.google.com/s2/favicons?sz=64&domain=booklog.jp",
+				namespace: "https://masinc.dev",
+				match: ["https://booklog.jp/users/*"],
+				grant: "none",
+			},
+			build: {
+				externalGlobals: {
+					react: cdn.jsdelivr("React", "umd/react.production.min.js"),
+					"react-dom": cdn.jsdelivr(
+						"ReactDOM",
+						"umd/react-dom.production.min.js",
+					),
+				},
+			},
+		}),
+	],
 });
