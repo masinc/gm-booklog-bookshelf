@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 
 function ToggleUserHeader() {
-	const [usersHeader] = useState<HTMLElement>(document.getElementById("users-header") as HTMLElement);
+	const [usersHeader] = useState<HTMLElement>(
+		document.getElementById("users-header") as HTMLElement,
+	);
 
 	useEffect(() => {
 		if (usersHeader) {
@@ -21,7 +23,13 @@ function ToggleUserHeader() {
 
 	return (
 		<div className="menu">
-			<button type="button" onClick={toggle} className="btn btn-neutral text-xl">本棚情報</button>
+			<button
+				type="button"
+				onClick={toggle}
+				className="btn btn-neutral text-xl"
+			>
+				本棚情報
+			</button>
 		</div>
 	);
 }

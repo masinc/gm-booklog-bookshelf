@@ -23,7 +23,9 @@ ReactDOM.createRoot(
 	</React.StrictMode>,
 );
 
-const shelfHeaderMenu = document.querySelector("#shelf-header > .shelf-header-menu") as HTMLElement;
+const shelfHeaderMenu = document.querySelector(
+	"#shelf-header > .shelf-header-menu",
+) as HTMLElement;
 
 if (!shelfHeaderMenu) {
 	throw new Error("Element not found: #shelf-header-menu");
