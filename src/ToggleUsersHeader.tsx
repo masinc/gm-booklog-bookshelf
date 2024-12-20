@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function App() {
+function ToggleUserHeader() {
 	const [usersHeader] = useState<HTMLElement>(document.getElementById("users-header") as HTMLElement);
 
 	useEffect(() => {
@@ -26,4 +26,4 @@ function App() {
 	);
 }
 
-export default App;
+export default ToggleUserHeader;
