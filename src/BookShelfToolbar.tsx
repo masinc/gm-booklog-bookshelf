@@ -24,7 +24,7 @@ function BookShelfToolbar() {
 			<div className="flex items-center text-xl mx-5">
 				<input
 					type="search"
-					className="input input-bordered w-64"
+					className="input input-bordered w-64 text-xl"
 					placeholder="Search..."
 					value={searchText}
 					onChange={(e) => setSearchText(e.target.value)}
@@ -37,7 +37,7 @@ function BookShelfToolbar() {
 					}}
 				/>
 				<button
-					className="btn btn-primary mx-1"
+					className="btn btn-primary mx-1 text-xl"
 					type="button"
 					onClick={() => {
 						const params = new URLSearchParams(window.location.search);
