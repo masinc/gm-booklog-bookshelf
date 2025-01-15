@@ -10,24 +10,24 @@
     "release": "release-it"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@iconify/react": "^5.2.0",
-    "@types/react": "^19.0.7",
-    "@types/react-dom": "^19.0.3",
-    "@vitejs/plugin-react-swc": "^3.7.2",
+    "@iconify/react": "^5.1.0",
+    "@types/react": "^18.3.16",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react-swc": "^3.0.0",
     "autoprefixer": "^10.4.20",
-    "daisyui": "^4.12.23",
-    "esbuild": "0.24.2",
-    "postcss": "^8.5.1",
+    "daisyui": "^4.12.22",
+    "esbuild": "0.24.0",
+    "postcss": "^8.4.49",
     "release-it": "^18.1.1",
     "release-it-pnpm": "^4.6.4",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.3",
-    "vite": "^6.0.7",
-    "vite-plugin-monkey": "^5.0.5"
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3",
+    "vite-plugin-monkey": "^5.0.0"
   }
 }
